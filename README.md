@@ -1,27 +1,92 @@
-# Implementing Drill-Down Charts in Blazor for Detailed Data Exploration
+# Blazor Drill-Down Charts
 
-Drill-down charts are a powerful tool for interactive data exploration in Blazor applications. They enable users to click on a data point and navigate to more detailed information, making it easier to analyze hierarchical or categorized data.
+A sample Blazor application demonstrating interactive drill-down charts for detailed data exploration. Click on chart data points or axis labels to navigate through hierarchical population data with smooth transitions and intuitive UI.
 
-These [OnPointClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnPointClick) and [OnAxisLabelClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnAxisLabelClick) events enhance data exploration by allowing users to seamlessly navigate between different levels of detail. They provide a clean and efficient way to analyze complex datasets without cluttering the main chart view.
+## Overview
+
+This project showcases how to build interactive, hierarchical data visualizations in Blazor using the Chart component. The drill-down functionality enables users to explore data at multiple levels—from continents to countries—with a seamless navigation experience.
+
+The implementation leverages Syncfusion's [`OnPointClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnPointClick) and [`OnAxisLabelClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnAxisLabelClick) events to provide a clean and efficient way to analyze complex datasets without cluttering the main chart view.
+
+## Features
+
+- **Interactive drill-down navigation** — Click on chart columns or axis labels to drill down to detailed data
+- **Smooth state management** — Intuitive breadcrumb-style navigation for easy backtracking
+- **Hierarchical data visualization** — Population data organized by continent and country
+- **Rich formatting** — Number formatting with thousands separators and abbreviated units (B, M, K)
+- **Responsive design** — Charts adapt to different screen sizes
+- **Dynamic theming** — Color-coded categories for better visual distinction
 
 ## Prerequisites
 
-- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
-- Basic understanding of Blazor and C#
+- [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Getting Started
 
-### Clone the Repository
+### Clone and Open
 
-```bash
-git clone https://github.com/yourusername/Implementing-Drill-Down-Charts-in-Blazor-for-Detailed-Data-Exploration.git
+```powershell
+git clone https://github.com/SyncfusionExamples/Implementing-Drill-Down-Charts-in-Blazor-for-Detailed-Data-Exploration.git
 cd Implementing-Drill-Down-Charts-in-Blazor-for-Detailed-Data-Exploration
 ```
 
-## Build and Run
+### Run with Visual Studio
 
-1. Open the solution in Visual Studio.
-2. Restore the NuGet packages.
-3. Build the solution.
-4. Run the application.
+1. Open the solution file using Visual Studio 2022 or later.
+2. Restore the NuGet packages by rebuilding the solution.
+3. Build the project to ensure there are no compilation errors.
+4. Run the project.
+
+### Run with .NET CLI
+
+```bash
+# Restore dependencies
+dotnet restore
+
+# Run the project
+dotnet run
+```
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/SyncfusionExamples/Implementing-Drill-Down-Charts-in-Blazor-for-Detailed-Data-Exploration.git
+cd Implementing-Drill-Down-Charts-in-Blazor-for-Detailed-Data-Exploration
+```
+
+### Run with Visual Studio
+
+1. Open the solution file using Visual Studio 2022 or later.
+2. Restore the NuGet packages by rebuilding the solution.
+3. Build the project to ensure there are no compilation errors.
+4. Run the project.
+
+### Run with .NET CLI
+
+```bash
+# Restore dependencies
+dotnet restore
+
+# Run the project
+dotnet run
+```
+
+## How It Works
+
+The drill-down chart uses two key event handlers:
+
+- **`OnPointClick`** — Triggered when a user clicks on a chart column, updating the data source and chart title
+- **`OnAxisLabelClick`** — Triggered when a user clicks on an axis label, enabling label-based drill-down
+
+A breadcrumb-style navigation header shows the current drill level and allows users to navigate back to the top level by clicking "Population".
+
+## Resources
+
+- **Online Example**:  https://blazor.syncfusion.com/demos/chart/
+- [Syncfusion Blazor Charts Documentation](https://www.syncfusion.com/blazor-components/blazor-charts/)
+- [Blazor Official Documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/)
+- [Interactive Server Components](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/rendering-modes#interactive-server-rendering)

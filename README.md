@@ -61,4 +61,3 @@ A breadcrumb-style navigation header shows the current drill level and allows us
 ## Resources
 
 - [Syncfusion Blazor Charts Documentation](https://blazor.syncfusion.com/documentation/chart/getting-started-with-web-app)
-ff

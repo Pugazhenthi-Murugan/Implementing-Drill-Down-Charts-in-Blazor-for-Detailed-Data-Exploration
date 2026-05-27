@@ -1,12 +1,10 @@
 # Blazor Drill-Down Charts
 
-A sample Blazor application demonstrating interactive [drill-down charts](https://www.syncfusion.com/blogs/post/drill-down-charts-in-blazor) for detailed data exploration. Click on chart data points or axis labels to navigate through hierarchical population data with smooth transitions and intuitive UI.
+A sample Blazor application demonstrating interactive drill-down [charts](https://www.syncfusion.com/blazor-components/blazor-charts) for detailed data exploration. Click on chart data points or axis labels to navigate through hierarchical population data with smooth transitions and intuitive UI.
 
 ## Overview
 
 This project showcases how to build interactive, hierarchical data visualizations in Blazor using the Chart component. The drill-down functionality enables users to explore data at multiple levels—from continents to countries—with a seamless navigation experience.
-
-The implementation leverages Syncfusion's [`OnPointClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnPointClick) and [`OnAxisLabelClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartEvents.html#Syncfusion_Blazor_Charts_ChartEvents_OnAxisLabelClick) events to provide a clean and efficient way to analyze complex datasets without cluttering the main chart view.
 
 ## Features
 
@@ -49,15 +47,7 @@ dotnet restore
 dotnet run
 ```
 
-## How It Works
-
-The drill-down chart uses two key event handlers:
-
-- **`OnPointClick`** — Triggered when a user clicks on a chart column, updating the data source and chart title
-- **`OnAxisLabelClick`** — Triggered when a user clicks on an axis label, enabling label-based drill-down
-
-A breadcrumb-style navigation header shows the current drill level and allows users to navigate back to the top level by clicking "Population".
-
 ## Resources
 
 - [Syncfusion Blazor Charts Documentation](https://blazor.syncfusion.com/documentation/chart/getting-started-with-web-app)
+- [Syncfusion Blazor Drilldown Charts](https://blazor.syncfusion.com/demos/chart/column-drilldown?theme=fluent2)
